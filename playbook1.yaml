@@ -1,0 +1,13 @@
+---
+- name: Configure
+  hosts: all
+  become: yes
+  tasks: 
+    - name: Create user Alice
+      user:
+        name: alice
+        state: present
+    - name: Create user Bjorn
+      user:
+        name: bjorn
+        state: present
