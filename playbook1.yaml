@@ -11,3 +11,7 @@
       user:
         name: bjorn
         state: present
+    - name: Create file /tmp/exercise with content
+      copy:
+        content: "TF with Ansible integration"
+        dest: /tmp/exercise
